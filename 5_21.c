@@ -51,27 +51,46 @@
 //}
 
 //四
-#include <assert.h>
-#define NULL 0
-void my_strcpy(char *dest,char *src)
-{
-	assert(*dest != NULL);
-	assert(*src != NULL);
-	while(*dest++=*src++)
-	{
-		;
-	}
-}
+//#include <assert.h>
+//#define NULL 0
+//void my_strcpy(char *dest,const char *src)
+//{
+//	assert(*dest != NULL);//断言
+//	assert(*src != NULL);
+//	while(*dest++=*src++)
+//	{
+//		;
+//	}
+//}
+//
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//	char arr1[]="############";
+//	char arr2[]="bit";
+//	my_strcpy(arr1,arr2);
+//	printf("%s\n",arr1);
+//	system("pause");
+//	return 0;
+//}
+
+
+
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-	char arr1[]="############";
-	char arr2[]="bit";
-	my_strcpy(arr1,arr2);
-	printf("%s\n",arr1);
+	//const放在指针变量的*左边时，修饰的是*p，也就是说；不能通过p来改变*p（num）的值
+	//const 放在指针变量的*右边时，修饰的是指针变量p的本身，p不能被改变 
+	 int num=10;
+	int* const p=&num;
+	*p =20;
+	printf("%d\n",num);
 	system("pause");
 	return 0;
 }
