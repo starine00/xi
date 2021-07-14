@@ -1,6 +1,6 @@
 //strtok
-//str -- Òª±»·Ö½â³ÉÒ»×éĞ¡×Ö·û´®µÄ×Ö·û´®¡£
-//sep -- °üº¬·Ö¸ô·ûµÄ C ×Ö·û´®¡£
+//str -- è¦è¢«åˆ†è§£æˆä¸€ç»„å°å­—ç¬¦ä¸²çš„å­—ç¬¦ä¸²ã€‚
+//sep -- åŒ…å«åˆ†éš”ç¬¦çš„ C å­—ç¬¦ä¸²ã€‚
 //char strtok(char* str,char* sep)
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -37,18 +37,18 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
-//#include <errno.h>//ÊÇÒ»¸öÈ«¾ÖµÄ´íÎóÂë±äÁ¿
-////µ±CÓïÑÔµÄ¿âº¯ÊıÔÚÖ´ĞĞ¹ı³ÌÖĞ·¢ÉúÁË´íÎó£¬¾Í»á°Ñ¶ÔÓ¦µÄ´íÎóÂë£¬¸³Öµµ½errorÖĞ
+//#include <errno.h>//æ˜¯ä¸€ä¸ªå…¨å±€çš„é”™è¯¯ç å˜é‡
+////å½“Cè¯­è¨€çš„åº“å‡½æ•°åœ¨æ‰§è¡Œè¿‡ç¨‹ä¸­å‘ç”Ÿäº†é”™è¯¯ï¼Œå°±ä¼šæŠŠå¯¹åº”çš„é”™è¯¯ç ï¼Œèµ‹å€¼åˆ°errorä¸­
 //int main()
 //{
-//	//´íÎóÂë ´íÎóĞÅÏ¢
+//	//é”™è¯¯ç  é”™è¯¯ä¿¡æ¯
 //	//0--  NO errr
 //	//1--  Operation not permitted
 //	//2--  no such file or directory
 //
 //	/*char* str=strerror(errno);
 //	printf("%s\n",str);*/
-//	FILE* pf=fopen("test.txt","r");//´ò¿ªÎÄ¼ş  ´ò¿ªµ±Ç°ÎÄ¼şÂ·¾¶ÏÂµÄtest.txtÎÄ¼ş
+//	FILE* pf=fopen("test.txt","r");//æ‰“å¼€æ–‡ä»¶  æ‰“å¼€å½“å‰æ–‡ä»¶è·¯å¾„ä¸‹çš„test.txtæ–‡ä»¶
 //	if(pf==NULL)
 //	{
 //		printf("%s\n",strerror(errno));
@@ -69,12 +69,12 @@
 //int main()
 //{
 //	//char ch='2';
-//	///*int ret=islower(ch);*///ÊÇ·ñÊÇĞ¡Ğ´×ÖÄ¸
-//	//int ret=isdigit(ch);//ÅĞ¶ÏÊÇ·ñÊÇÊı×Ö×Ö·û
+//	///*int ret=islower(ch);*///æ˜¯å¦æ˜¯å°å†™å­—æ¯
+//	//int ret=isdigit(ch);//åˆ¤æ–­æ˜¯å¦æ˜¯æ•°å­—å­—ç¬¦
 //	//printf("%d\n",ret);
 //
-//	/*char ch=tolower('Q');*///´óĞ´×ÖÄ¸×ªÎªĞ¡Ğ´
-//	//char ch=toupper('q');//Ğ¡Ğ´×ª´óĞ´
+//	/*char ch=tolower('Q');*///å¤§å†™å­—æ¯è½¬ä¸ºå°å†™
+//	//char ch=toupper('q');//å°å†™è½¬å¤§å†™
 //	//putchar(ch);
 //	int i=0;
 //	char arr[]="I Am A Student";
@@ -93,7 +93,7 @@
 
 
 
-//memcpyÄÚ´æ¿½±´
+//memcpyå†…å­˜æ‹·è´
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -106,7 +106,7 @@
 //{
 //	//int arr1[10]={1,2,3,4,5};
 //	//int arr2[10]={0};
-//	struct S arr3[]={{"ÕÅÈı",18},{"ÀîËÄ",20}};
+//	struct S arr3[]={{"å¼ ä¸‰",18},{"æå››",20}};
 //	struct S arr4[]={0};
 //	memcpy(arr4,arr3,sizeof(arr3));
 //	//memcpy(arr2,arr1,sizeof(arr1));
@@ -143,7 +143,7 @@
 //{
 //	int arr1[10]={1,2,3,4,5};
 //	int arr2[10]={0};
-//	/*struct S arr3[]={{"ÕÅÈı",18},{"ÀîËÄ",20}};
+//	/*struct S arr3[]={{"å¼ ä¸‰",18},{"æå››",20}};
 //	struct S arr4[]={0};
 //	my_memcpy(arr4,arr3,sizeof(arr3));*/
 //	my_memcpy(arr2,arr1,sizeof(arr1));
@@ -152,9 +152,9 @@
 //}
 
 
-//memmoveÖØµş¿½±´,´¦ÀíÄÚ´æÖØµşÇé¿ö
-//memcpyÖ»Òª´¦Àí£¬²»ÖØµşµÄÄÚ´æ¿½±´¾ÍĞĞÁË
-//menmove ´¦ÀíÄÚ´æÖØµşÇé¿öµÄ¿½±´
+//memmoveé‡å æ‹·è´,å¤„ç†å†…å­˜é‡å æƒ…å†µ
+//memcpyåªè¦å¤„ç†ï¼Œä¸é‡å çš„å†…å­˜æ‹·è´å°±è¡Œäº†
+//menmove å¤„ç†å†…å­˜é‡å æƒ…å†µçš„æ‹·è´
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -166,7 +166,7 @@
 //	assert(src);
 //	if(dest<src)
 //	{
-//		//´ÓÇ°Ïòºó¿½±´
+//		//ä»å‰å‘åæ‹·è´
 //		while(num--)
 //		{
 //			*(char*)dest=*(char*)src;
@@ -176,7 +176,7 @@
 //	}
 //	else
 //	{
-//		//´ÓºóÏòÇ°¿½±´
+//		//ä»åå‘å‰æ‹·è´
 //		while(num--)
 //		{
 //			*((char*)dest+num)=*((char*)src+num);
@@ -189,8 +189,8 @@
 //{
 //	int arr[]={1,2,3,4,5,6,7,8,9,10};
 //	int i=0;
-//	my_memmove(arr+2,arr,20);//´ÓÇ°ÏòºóÅ²¶¯
-//	//my_memmove(arr,arr+2,20);//´ÓºóÏòÇ°Å²¶¯
+//	my_memmove(arr+2,arr,20);//ä»å‰å‘åæŒªåŠ¨
+//	//my_memmove(arr,arr+2,20);//ä»åå‘å‰æŒªåŠ¨
 //	for(i=0;i<10;i++)
 //	{
 //		printf("%d ",arr[i]);
@@ -199,7 +199,7 @@
 //	return 0;
 //}
 
-//memcmp±È½Ï
+//memcmpæ¯”è¾ƒ
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -208,27 +208,27 @@
 //{
 //	//01 00 00 00 02 00 00 00 03 00 00 00....
 //	//01 00 00 00 02 00 00 00 05 00 00 00...
-//	//±È½ÏµÄÊÇÇ°9¸ö×Ö½Ú  ËùÒÔÊä³ö-1£¬arr2´ó
+//	//æ¯”è¾ƒçš„æ˜¯å‰9ä¸ªå­—èŠ‚  æ‰€ä»¥è¾“å‡º-1ï¼Œarr2å¤§
 //	int arr1[]={1,2,3,4,5,6,7};
 //	int arr2[]={1,2,5,4,5,6};
-//	int ret=memcmp(arr1,arr2,9);//ºóÃæµÄ8Îª±È½ÏµÄ×Ö½ÚÊı£¬¼´Êı×éÖĞµÄÇ°Á½¸öÔªËØ£¬Ò»¸öÔªËØËÄ¸ö×Ö½Ú
+//	int ret=memcmp(arr1,arr2,9);//åé¢çš„8ä¸ºæ¯”è¾ƒçš„å­—èŠ‚æ•°ï¼Œå³æ•°ç»„ä¸­çš„å‰ä¸¤ä¸ªå…ƒç´ ï¼Œä¸€ä¸ªå…ƒç´ å››ä¸ªå­—èŠ‚
 //	printf("%d\n",ret);
 //	system("pause");
 //	return 0;
 //}
 
 
-//memsetÄÚ´æÉèÖÃ
+//memsetå†…å­˜è®¾ç½®
 int main()
 {
 	char arr[10]="";
-	memset(arr,'#',10);//10ÎªĞŞ¸Ä10¸ö×Ö½Ú
+	memset(arr,'#',10);//10ä¸ºä¿®æ”¹10ä¸ªå­—èŠ‚
 
 
 	int arr[10]={0};
 	memset(arr,1,10);
-	//ĞŞ¸Ä10¸ö×Ö½Ú
-	//01 01 01 01 01 01 01 01 01 01 00 00 00 00 00 ....4¸öÒ»Î»
+	//ä¿®æ”¹10ä¸ªå­—èŠ‚
+	//01 01 01 01 01 01 01 01 01 01 00 00 00 00 00 ....4ä¸ªä¸€ä½
 	system("pause");
 	return 0;
 }
