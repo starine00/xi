@@ -30,7 +30,7 @@
 //	return 0;
 //}
 
-//strncmp×Ö·û´®±È½Ï
+//strncmpå­—ç¬¦ä¸²æ¯”è¾ƒ
 //int strncmp(const char* s1,const char* s2,int count)
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -46,7 +46,7 @@
 //}
 
 
-//strstr²éÕÒÒ»¸ö×Ó×Ö·û´®
+//strstræŸ¥æ‰¾ä¸€ä¸ªå­å­—ç¬¦ä¸²
 //char* ststr(const char* s1,const char* s2)
 #include <stdio.h>
 #include <stdlib.h>
@@ -75,7 +75,7 @@ char* my_strstr(const char* p1, const char* p2)
 		}
 		if(*s2=='\0')
 		{
-			return cur;//ÕÒµ½×Ó´®
+			return cur;//æ‰¾åˆ°å­ä¸²
 		}
 		if(*s1=='\0')
 		{
@@ -83,7 +83,7 @@ char* my_strstr(const char* p1, const char* p2)
 		}
 		cur++;
 	}
-	return NULL;//ÕÒ²»µ½×Ó´®
+	return NULL;//æ‰¾ä¸åˆ°å­ä¸²
 }
 int main()
 {
@@ -92,7 +92,7 @@ int main()
 	char* ret=my_strstr(p1,p2);
 	if(ret==NULL)
 	{
-		printf("×Ó´®²»´æÔÚ\n");
+		printf("å­ä¸²ä¸å­˜åœ¨\n");
 	}
 	else
 	{
