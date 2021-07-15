@@ -1,4 +1,4 @@
-//strcatÓÃ·¨
+//strcatç”¨æ³•
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -8,11 +8,11 @@
 //	char *ret=dest;
 //	assert(dest!=NULL);
 //	assert(src);
-//	while(*dest!='\0')//ÕÒµ½Ä¿µÄ×Ö·û´®¡®\0¡¯
+//	while(*dest!='\0')//æ‰¾åˆ°ç›®çš„å­—ç¬¦ä¸²â€˜\0â€™
 //	{
 //		dest++;
 //	}
-//	while(*dest++=*src++)//×·¼Ó
+//	while(*dest++=*src++)//è¿½åŠ 
 //	{
 //		;
 //	}
@@ -21,7 +21,7 @@
 //}
 //int main()
 //{
-//	char arr1[30]="hello\0xxxxxxxxxx";//Ê¹ÓÃstrcatÒª×¢Òâ×·¼ÓÄ¿µÄµØ×ã¹»´ó
+//	char arr1[30]="hello\0xxxxxxxxxx";//ä½¿ç”¨strcatè¦æ³¨æ„è¿½åŠ ç›®çš„åœ°è¶³å¤Ÿå¤§
 //	char arr2[]="world";
 //	my_strcat(arr1,arr2);
 //	printf("%s\n",arr1);
@@ -33,7 +33,7 @@
 
 
 
-//strcmpÓÃ·¨
+//strcmpç”¨æ³•
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -41,17 +41,17 @@
 int my_strcmp(const char* str1,const char* str2)
 {
 	assert(str1&&str2);
-	//±È½Ï
+	//æ¯”è¾ƒ
 	while(*str1==*str2)
 	{
 		if(*str1=='\0')
 		{
-			return 0;//ÏàµÈ
+			return 0;//ç›¸ç­‰
 		}
 		str1++;
 		str2++;
 	}
-	return (*str1-*str2);//Èç¹ûËµ·µ»ØµÄ²»ÊÇ-1»òÕß1¾ÍÕâÃ´Ğ´
+	return (*str1-*str2);//å¦‚æœè¯´è¿”å›çš„ä¸æ˜¯-1æˆ–è€…1å°±è¿™ä¹ˆå†™
 	/*if(*str1>*str2)
 	{
 		return 1;
