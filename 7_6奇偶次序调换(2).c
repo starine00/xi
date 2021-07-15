@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-//ÆæÊıÅ¼Êı´ÎĞòµ÷»»
-//´Ó×ó±ß¿ªÊ¼ÕÒÒ»¸öÅ¼Êı
-//´ÓÓÒ±ß¿ªÊ¼ÕÒÒ»¸öÆæÊı
-//°ÑËûÃÇ½»»»
+//å¥‡æ•°å¶æ•°æ¬¡åºè°ƒæ¢
+//ä»å·¦è¾¹å¼€å§‹æ‰¾ä¸€ä¸ªå¶æ•°
+//ä»å³è¾¹å¼€å§‹æ‰¾ä¸€ä¸ªå¥‡æ•°
+//æŠŠä»–ä»¬äº¤æ¢
 void print(int arr[],int sz)
 {
 	int i=0;
@@ -19,11 +19,11 @@ void move(int arr[],int sz)
 	int right=sz-1;
 	while(left<right)
 	{
-		while((left<right) && (arr[left]%2==1))//´Ó×ó±ßÕÒÅ¼Êı
+		while((left<right) && (arr[left]%2==1))//ä»å·¦è¾¹æ‰¾å¶æ•°
 		{
 			left++;
 		}
-		while((left<right) && (arr[left]%2==0))//´ÓÓÒ±ßÕÒÆæÊı
+		while((left<right) && (arr[left]%2==0))//ä»å³è¾¹æ‰¾å¥‡æ•°
 		{
 			right--;
 		}
