@@ -1,11 +1,11 @@
-//strlenÓÃ·¨
+//strlenç”¨æ³•
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
 //#include <assert.h>
-////1.¼ÆÊıÆ÷·½·¨
-////2.µİ¹é
-////3.Ö¸Õë¼õÖ¸Õë
+////1.è®¡æ•°å™¨æ–¹æ³•
+////2.é€’å½’
+////3.æŒ‡é’ˆå‡æŒ‡é’ˆ
 //int my_strlen(char* str)
 //{
 //	int count=0;
@@ -25,7 +25,7 @@
 //	return 0;
 //}
 
-//²»´´½¨ÁÙÊ±±äÁ¿ÓÃµİ¹éÍ³¼Æ×Ö·û´®µÄ³¤¶È
+//ä¸åˆ›å»ºä¸´æ—¶å˜é‡ç”¨é€’å½’ç»Ÿè®¡å­—ç¬¦ä¸²çš„é•¿åº¦
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
@@ -50,7 +50,7 @@
 
 
 
-//strcpy×Ö·û´®¿½±´ÓÃ·¨
+//strcpyå­—ç¬¦ä¸²æ‹·è´ç”¨æ³•
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -61,25 +61,25 @@ char *my_strcpy(char* dest,const char* src)
 	assert(dest!=NULL);
 	assert(src!=NULL);
 	
-	//while(*src!='\0')//whileÑ­»·¿ÉÒÔĞ´ÎªÕâÖÖwhile(*dest++=*src++){;}
+	//while(*src!='\0')//whileå¾ªç¯å¯ä»¥å†™ä¸ºè¿™ç§while(*dest++=*src++){;}
 	//{
 	//	*dest=*src;
 	//	dest++;
 	//	src++;
 	//}
 	//*dest=*src;
-	while(*dest++=*src++)//¿½±´srcÖ¸ÏòµÄ×Ö·û´®µ½destÖ¸ÏòµÄ¿Õ¼ä£¬°üº¬¡®\0¡¯
+	while(*dest++=*src++)//æ‹·è´srcæŒ‡å‘çš„å­—ç¬¦ä¸²åˆ°destæŒ‡å‘çš„ç©ºé—´ï¼ŒåŒ…å«â€˜\0â€™
 	{
 		;
 	}
-	return ret;//·µ»ØÄ¿µÄ¿Õ¼äµÄÆğÊ¼µØÖ·
+	return ret;//è¿”å›ç›®çš„ç©ºé—´çš„èµ·å§‹åœ°å€
 }
 int main()
 {
 	char arr1[]="abcdef";
 	char arr2[]="bit";
 	my_strcpy(arr1,arr2);
-	//strcpy(arr1,arr2);//°Ñarr2¿½±´µ½arr1ÖĞ
+	//strcpy(arr1,arr2);//æŠŠarr2æ‹·è´åˆ°arr1ä¸­
 	printf("%s\n",arr1);
 	system("pause");
 	return 0;
