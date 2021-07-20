@@ -27,7 +27,7 @@ void print2(stu* ps)
 
 int main()
 {
-	stu s={"³ÂöÎÏè",20,"15598777896","Å®"};
+	stu s={"Â³Ã‚Ã¶ÃÃÃ¨",20,"15598777896","Ã…Â®"};
 	print1(s);
 	print2(&s);
 	system("pause");
