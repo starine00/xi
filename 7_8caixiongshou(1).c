@@ -1,4 +1,4 @@
-////²ÂĞ×ÊÖ
+////çŒœå‡¶æ‰‹
 //#include <stdio.h>
 //#include <stdlib.h>
 //int main()
@@ -56,10 +56,10 @@ int main()
 
 
 char str1[]="hello";
-char str2[]="hello";//ÕâÁ½¸öÊÇ²»ÏàµÈµÄ  ÒòÎª´æ´¢µØÖ·²»Í¬
+char str2[]="hello";//è¿™ä¸¤ä¸ªæ˜¯ä¸ç›¸ç­‰çš„  å› ä¸ºå­˜å‚¨åœ°å€ä¸åŒ
 
 char *str3="hello";
-char *str4="hello";//ÕâÁ½¸öÊÇÏàÍ¬µÄ
+char *str4="hello";//è¿™ä¸¤ä¸ªæ˜¯ç›¸åŒçš„
 
-//int fun(int a,int b)//Õâ¸ö½Ğ×öº¯ÊıÉùÃ÷
-//int (*fun)(int a,int b)//Õâ¸ö½Ğ×öº¯ÊıÖ¸Õë
+//int fun(int a,int b)//è¿™ä¸ªå«åšå‡½æ•°å£°æ˜
+//int (*fun)(int a,int b)//è¿™ä¸ªå«åšå‡½æ•°æŒ‡é’ˆ
